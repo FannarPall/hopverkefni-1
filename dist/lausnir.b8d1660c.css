@@ -137,7 +137,7 @@ main > section {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 48vh;
+  width: 55vh;
   height: auto;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -257,5 +257,51 @@ main > section {
 
 .toggle-group input[type="radio"]:focus + label {
   border: none;
+}
+
+.lausnir-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 6vh;
+  display: flex;
+}
+
+.lausn-card {
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31%;
+  height: 80vh;
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.lausn-card h2 {
+  font-family: sans-serif;
+  font-size: 5vh;
+}
+
+.lausn-card-description {
+  color: #7e7e7e;
+  font-family: sans-serif;
+  font-size: 3vh;
+}
+
+.lausn-card-price {
+  font-family: sans-serif;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.nánar-button {
+  color: #fff;
+  background-color: #272727;
+  border: none;
+  border-radius: 8px;
+  width: 22vh;
+  height: 6vh;
+  font-family: sans-serif;
 }
 /*# sourceMappingURL=lausnir.b8d1660c.css.map */

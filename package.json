@@ -7,9 +7,10 @@
   "type": "commonjs",
   "scripts": {
     "start": "parcel *.html",
-    "lint": "stylelint **/*.{css,scss,sass}" 
+    "lint": "stylelint **/*.{css,scss,sass}"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
     "parcel": "^2.16.0",
     "sass": "^1.93.2",
     "stylelint": "^16.25.0",

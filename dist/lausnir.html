@@ -6,7 +6,7 @@
 </head>
 <body>
     
-    <div class="content">
+    <div class="content-container">
         <div class="filter-container">
             <div class="filter-option">
                 <input type="checkbox">
@@ -41,21 +41,21 @@
             </div>
         </div>
 
-        <div>
+        <div class="main-content">
             
 
             <div class="search-container">
-                <input type="text">
+                <input type="text" class="search-bar" placeholder="Leita">
 
-                <div class="toggle-buttons">
-                    <input type="radio" name="toggle-option">
-                    <label for="btn1">Option 1</label>
+                <div class="toggle-group">
+                    <input type="radio" id="btn1" name="toggle-option">
+                    <label for="btn1">Nýjast</label>
 
-                    <input type="radio" name="toggle-option">
-                    <label for="btn2">Option 2</label>
+                    <input type="radio" id="btn2" name="toggle-option">
+                    <label for="btn2">Verð lægst fyrst</label>
 
-                    <input type="radio" name="toggle-option">
-                    <label for="btn3">Option 3</label>
+                    <input type="radio" id="btn3" name="toggle-option">
+                    <label for="btn3">Verð hæst fyrst</label>
                 </div>
             </div>
 

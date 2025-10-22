@@ -1,0 +1,49 @@
+.forsidu-lausnir{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.forsidu-lausnir-header {
+    margin-top: var(--spacing);
+    margin-bottom: calc(var(--spacing) * 2);
+}
+
+.forsidu-lausnir-header p {
+    color: #757575;
+}
+
+.forsidu-lausnir-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing) * 2);
+}
+
+.forsidu-lausnir-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: calc(var(--spacing) * 2);
+}
+
+.forsidu-lausnir-card img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    display: block;
+}
+
+.forsidu-lausnir-card h3 {
+    font-size: 1.25rem;
+    margin-top: var(--spacing);
+}
+
+.forsidu-lausnir-card p {
+    margin-top: var(--spacing);
+    color: #757575;
+}
+
+@media (min-width: 700px) {
+  .forsidu-lausnir-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -16,7 +16,7 @@
   --color-background-primary: #fff;
   --color-background-secondary: #000;
   --color-accent: #f99;
-  --color-protection: #00000059;
+  --color-protection: #0006;
   --font-base-size: 1rem;
   --font-family-base: "Gelasio", "Georgia", serif;
   --font-family-heading: "Atkinson Hyperlegible", "Courier New", monospace;
@@ -115,6 +115,253 @@ main {
 
 main > section {
   width: 100%;
+}
+
+footer {
+  width: 100%;
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+  background-color: var(--color-background-primary);
+  border-top: 1px solid #f0f0f0;
+  justify-items: center;
+  display: grid;
+}
+
+footer > .content {
+  gap: var(--gutter);
+  width: var(--width-offset);
+  padding: 0 var(--spacing);
+  max-width: var(--max-width);
+  flex-direction: column;
+  margin: 0 auto;
+  display: flex;
+}
+
+footer .footer-header {
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+i {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+footer .footer-section {
+  text-align: left;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: .5rem;
+}
+
+footer ul, footer section, footer h2 {
+  margin-bottom: var(--spacing);
+}
+
+@media (width >= 700px) {
+  footer > .content {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    width: var(--width-offset);
+    max-width: var(--max-width);
+    padding: 0;
+    display: grid;
+  }
+
+  footer .content > .footer-section, .content > .footer-header {
+    grid-column: span 3;
+  }
+
+  footer .footer-header {
+    align-items: baseline;
+    justify-content: baseline;
+    display: block;
+  }
+}
+
+.intro {
+  width: 100%;
+  min-height: calc(100vh - var(--height-nav));
+  color: var(--color-background-primary);
+  background-image: url("fartolva.56529e27.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0;
+  display: flex;
+  position: relative;
+}
+
+.intro .protection {
+  z-index: 1;
+  background-color: var(--color-protection);
+  position: absolute;
+  inset: 0;
+}
+
+.intro .content {
+  text-align: center;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 2em;
+  position: relative;
+}
+
+.intro .content h1 {
+  margin-top: calc(var(--spacing) * -4);
+  margin-bottom: var(--spacing);
+}
+
+.intro-takkar {
+  margin-top: calc(var(--spacing) * 4);
+  align-items: center;
+  gap: 1rem;
+  display: inline-flex;
+}
+
+.intro-takki {
+  color: #000;
+  background-color: #e3e3e3;
+  border-radius: 8px;
+  min-width: 160px;
+  padding: .75rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.intro-takki:nth-child(2n) {
+  color: #fff;
+  background-color: #2c2c2c;
+}
+
+.reviews {
+  width: var(--width-offset);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.review-header {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.review-header p {
+  color: #757575;
+}
+
+.review-grid {
+  gap: calc(var(--spacing) * 2);
+  grid-template-columns: 1fr;
+  display: grid;
+}
+
+.review-card {
+  padding: calc(var(--spacing) * 2);
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.review-card blockquote {
+  margin-bottom: var(--spacing);
+  font-size: 1.25rem;
+}
+
+.review-hofundur {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.review-hofundur img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.hofundur-nafn {
+  margin: 0;
+  font-weight: bold;
+}
+
+.hofundur-titill {
+  color: #757575;
+  margin-top: 1rem;
+  font-size: .75rem;
+}
+
+@media (width >= 700px) {
+  .review-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.forsidu-lausnir {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.forsidu-lausnir-header {
+  margin-top: var(--spacing);
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.forsidu-lausnir-header p {
+  color: #757575;
+}
+
+.forsidu-lausnir-grid {
+  gap: calc(var(--spacing) * 2);
+  grid-template-columns: 1fr;
+  display: grid;
+}
+
+.forsidu-lausnir-card {
+  padding: calc(var(--spacing) * 2);
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.forsidu-lausnir-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  display: block;
+}
+
+.forsidu-lausnir-card h3 {
+  margin-top: var(--spacing);
+  font-size: 1.25rem;
+}
+
+.forsidu-lausnir-card p {
+  margin-top: var(--spacing);
+  color: #757575;
+}
+
+@media (width >= 700px) {
+  .forsidu-lausnir-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 nav {

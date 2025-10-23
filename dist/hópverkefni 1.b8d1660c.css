@@ -837,4 +837,185 @@ nav ul li a {
   color: #acacac;
   font-family: sans-serif;
 }
+
+:root {
+  --max-w: 1200px;
+  --pad: 16px;
+  --text: #111;
+  --muted: #6b7280;
+  --bg: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--max-w);
+  padding-inline: var(--pad);
+  margin-inline: auto;
+}
+
+.flow > * + * {
+  margin-top: 2rem;
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-inner {
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  display: flex;
+}
+
+.brand {
+  color: inherit;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+}
+
+.brand-mark {
+  font-size: 1.5rem;
+}
+
+.main-nav ul {
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.main-nav a {
+  color: #222;
+  border-radius: .3rem;
+  padding: .4rem .6rem;
+  text-decoration: none;
+}
+
+.main-nav a:hover, .main-nav a.is-active {
+  background: #eee;
+}
+
+.hero {
+  background: url("abstrakt.47e9a2f1.jpg") center / cover no-repeat;
+  align-items: center;
+  height: 280px;
+  display: flex;
+  position: relative;
+}
+
+.hero:after {
+  content: "";
+  background: #fff9;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-inner {
+  z-index: 1;
+  position: relative;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.hero-subtitle {
+  color: var(--muted);
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.content-block {
+  border-bottom: 1px solid #eee;
+  padding-block: 2rem;
+}
+
+.content-block h2 {
+  margin-bottom: .3rem;
+}
+
+.eyebrow {
+  color: var(--muted);
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.site-footer {
+  background: #f9f9f9;
+  border-top: 1px solid #e5e7eb;
+  padding: 2rem 0;
+}
+
+.footer-grid {
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 2rem;
+  display: grid;
+}
+
+.footer-brand .brand-mark {
+  font-size: 1.6rem;
+}
+
+.social {
+  gap: .6rem;
+  margin-top: .5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.social a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-grid li + li {
+  margin-top: .3rem;
+}
+
+.footer-grid a {
+  color: #222;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width <= 500px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=hópverkefni 1.b8d1660c.css.map */

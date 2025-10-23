@@ -1,0 +1,128 @@
+
+
+.lausn-product {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8vh;
+}
+
+.product-image {
+    width: 50%;
+}
+
+.lausn-content {
+    width: 50%;
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lausn-content h2 {
+    font-family: sans-serif;
+}
+.vinsælt-tag {
+    background-color: rgb(215, 255, 215);
+    color: rgb(14, 138, 14);
+    font-family: sans-serif;
+    width: 12vh;
+    border-radius: 8px;
+    padding: 1vh;
+    text-align: center;
+}
+.lausn-content h1 {
+    font-family: sans-serif;
+    size: 12vh;
+}
+.lausn-description {
+    color: rgb(143, 143, 143);
+    font-family: sans-serif;
+    margin-bottom: 2vh;
+}
+
+.product-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.product-option {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.product-option label {
+    font-family: sans-serif;
+    margin-bottom: 1vh;
+}
+.product-option select {
+    height: 7vh;
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    padding-left: 2vh;
+    font-family: sans-serif;
+}
+
+
+.buy-button {
+    width: 100%;
+    height: 7vh;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vh;
+    border-radius: 8px;
+    margin-top: 4vh;
+}
+
+
+
+.dropdown-text-box {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    font-family: sans-serif;
+    background-color: #f8f8f8;
+}
+.dropdown-text-box input[type="checkbox"] {
+    display: none;
+}
+.toggle-label {
+    display: block;
+    padding: 15px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: sans-serif;
+    user-select: none;
+    position: relative;
+    border-radius: 6px 6px 0 0;
+}
+
+.toggle-label::after {
+    content: '^';
+    position: absolute;
+    right: 15px;
+}
+
+.hidden-content {
+    max-height: 0; 
+    overflow: hidden;
+    
+    transition: max-height 0.5s ease-in-out;
+}
+
+.hidden-content p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.dropdown-text-box input[type="checkbox"]:checked ~ .hidden-content {
+    max-height: 500px; 
+}

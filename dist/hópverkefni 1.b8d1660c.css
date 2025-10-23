@@ -58,13 +58,12 @@ html {
 
 .wrapper {
   gap: var(--vertical-space);
-  width: 100%;
-  min-height: 100vh;
-  margin-top: var(--height-nav);
   background-color: var(--color-background-primary);
   grid-template-rows: auto;
   grid-template-columns: 100%;
   justify-items: center;
+  width: 100%;
+  min-height: 100vh;
   display: grid;
 }
 

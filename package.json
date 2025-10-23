@@ -7,7 +7,9 @@
   "type": "commonjs",
   "scripts": {
     "start": "parcel *.html",
-    "lint": "stylelint **/*.{css,scss,sass}"
+    "lint": "stylelint **/*.{css,scss,sass}",
+    "build": "parcel build index.html --public-url ./"
+    
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.0",

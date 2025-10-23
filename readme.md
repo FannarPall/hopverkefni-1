@@ -4,4 +4,4 @@ Keyra fyrst:
 
 npm start til þess að byrjar parcel
 npm run lint til þess að keyra stylelint
-
+npm run build til þess að builda með parcel

@@ -63,7 +63,6 @@
     font-family: sans-serif;
 }
 
-
 .buy-button {
     width: 100%;
     height: 7vh;
@@ -75,8 +74,6 @@
     border-radius: 8px;
     margin-top: 4vh;
 }
-
-
 
 .dropdown-text-box {
     width: 100%;
@@ -122,7 +119,61 @@
     line-height: 1.6;
     color: #333;
 }
-
 .dropdown-text-box input[type="checkbox"]:checked ~ .hidden-content {
     max-height: 500px; 
+}
+
+
+
+
+.umsagnir-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.umsagnir-wrapper h2 {
+    font-family: sans-serif;
+}
+.umsagnir-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.umsögn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px; 
+    padding: 4vh;
+}
+.stars {
+    margin-bottom: 2vh;
+}
+.umsögn-title {
+    font-family: sans-serif;
+    
+}
+.umsögn-description {
+    font-family: sans-serif;
+    margin-bottom: 4vh;
+}
+.user-container {
+    display: flex;
+    flex-direction: row;
+}
+.avatar-photo {
+    border-radius: 100%;
+    width: 8vh;
+    height: 8vh;
+}
+.user-info {
+    margin-left: 2vh;
+}
+.username {
+    font-family: sans-serif;
+}
+.birthdate {
+    font-family: sans-serif;
+    color: #acacac;
 }

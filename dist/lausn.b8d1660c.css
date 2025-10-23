@@ -460,4 +460,66 @@ main > section {
 .dropdown-text-box input[type="checkbox"]:checked ~ .hidden-content {
   max-height: 500px;
 }
+
+.umsagnir-wrapper {
+  flex-direction: column;
+  display: flex;
+}
+
+.umsagnir-wrapper h2 {
+  font-family: sans-serif;
+}
+
+.umsagnir-container {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+}
+
+.umsögn-container {
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  padding: 4vh;
+  display: flex;
+}
+
+.stars {
+  margin-bottom: 2vh;
+}
+
+.umsögn-title {
+  font-family: sans-serif;
+}
+
+.umsögn-description {
+  margin-bottom: 4vh;
+  font-family: sans-serif;
+}
+
+.user-container {
+  flex-direction: row;
+  display: flex;
+}
+
+.avatar-photo {
+  border-radius: 100%;
+  width: 8vh;
+  height: 8vh;
+}
+
+.user-info {
+  margin-left: 2vh;
+}
+
+.username {
+  font-family: sans-serif;
+}
+
+.birthdate {
+  color: #acacac;
+  font-family: sans-serif;
+}
 /*# sourceMappingURL=lausn.b8d1660c.css.map */

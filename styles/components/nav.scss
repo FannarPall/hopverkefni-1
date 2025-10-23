@@ -32,7 +32,7 @@ nav {
 .hamburger-menu {
     display: none;
 }
-ul {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,7 +62,7 @@ nav ul li a {
 
 
 @media screen and  (max-width: 800px) {
-    ul {
+    nav ul {
         display: none;
     }
 

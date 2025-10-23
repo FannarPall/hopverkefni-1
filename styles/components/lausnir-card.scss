@@ -1,0 +1,67 @@
+
+
+.lausnir-container {
+    margin-top: 6vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.lausn-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: auto; 
+    
+    height: 80vh; 
+    padding: 20px;
+    margin-bottom: 0;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf;
+}
+@media (max-width: 992px) {
+    .lausnir-container {
+        grid-template-columns: repeat(2, 1fr);
+    }    
+    .lausn-card {
+        height: 60vh; 
+    }
+}
+@media (max-width: 600px) {
+    .lausnir-container {
+        grid-template-columns: 1fr;
+    }
+    .lausn-card {
+        height: auto; 
+    }
+    .lausn-card h2 {
+        font-size: 3vh;
+    }
+}
+
+
+
+.lausn-card h2 {
+    font-family: sans-serif;
+    font-size: 5vh;
+}
+
+.lausn-card-description {
+    font-family: sans-serif;
+    font-size: 3vh;
+    color: rgb(126, 126, 126);
+}
+.lausn-card-price {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3vh;
+}
+.nánar-button {
+    width: 22vh;
+    height: 6vh;
+    background-color: #272727;
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 8px;
+}

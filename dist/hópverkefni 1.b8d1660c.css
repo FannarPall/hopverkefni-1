@@ -441,6 +441,7 @@ nav ul li a {
 
 .main-content {
   flex: 1;
+  margin-bottom: 6vh;
   margin-left: 20px;
 }
 
@@ -647,6 +648,7 @@ nav ul li a {
 .lausn-product {
   flex-direction: row;
   margin-top: 8vh;
+  margin-bottom: 12vh;
   display: flex;
 }
 
@@ -722,6 +724,7 @@ nav ul li a {
   width: 100%;
   height: 7vh;
   margin-top: 4vh;
+  margin-bottom: 4vh;
   font-family: sans-serif;
   font-size: 3vh;
 }
@@ -782,6 +785,7 @@ nav ul li a {
 }
 
 .umsagnir-wrapper h2 {
+  margin-bottom: 8vh;
   font-family: sans-serif;
 }
 
@@ -836,6 +840,49 @@ nav ul li a {
 .birthdate {
   color: #acacac;
   font-family: sans-serif;
+}
+
+.senda-póst-wrapper {
+  justify-content: center;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+  display: flex;
+}
+
+.senda-póst-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.senda-póst-container h2 {
+  font-family: sans-serif;
+}
+
+.email-form-container {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4vh;
+  display: flex;
+}
+
+.email-form-container input {
+  color: #000;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  width: 65%;
+  padding-left: 2vh;
+}
+
+.email-form-container button {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  width: 33%;
+  height: 7vh;
 }
 
 :root {

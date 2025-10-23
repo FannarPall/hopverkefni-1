@@ -5,7 +5,9 @@
 @use "styles/base";
 @use "styles/grid";
 
-// bæta við hér þegar gert eru nýar scss skrár
+//bæta við hér þegar gert eru nýar scss skrár
 //@use "styles/components/nav";
 @use "styles/components/footer";
-
+@use "styles/components/intro";
+@use "styles/components/reviews";
+@use "styles/components/forsidulausnir";

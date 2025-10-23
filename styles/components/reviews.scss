@@ -1,0 +1,60 @@
+.reviews{
+    width: var(--width-offset);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.review-header {
+    margin-bottom: calc(var(--spacing) * 2);
+}
+
+.review-header p {
+    color: #757575;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing) * 2);
+}
+
+.review-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: calc(var(--spacing) * 2);
+}
+
+.review-card blockquote{
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing);
+}
+
+.review-hofundur {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-hofundur img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.hofundur-nafn {
+    font-weight: bold;
+    margin: 0;
+}
+
+.hofundur-titill {
+    color: #757575;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+}
+
+@media (width >= 700px) {
+  .review-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
